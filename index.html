@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sambath Mech | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <h1>Sambath Mech</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 p-6">
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold">Your Name</h1>
+        <p class="text-gray-600">Web Developer | Designer | Creator</p>
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am a passionate developer with experience in web and software development. I love creating innovative solutions and working on exciting projects.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project.</p>
-            <a href="#" target="_blank">View Project</a>
+    
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">About Me</h2>
+            <p class="text-gray-600 mt-2">A brief introduction about yourself and your work.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Projects</h2>
+            <p class="text-gray-600 mt-2">Showcase some of your best work with links.</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-xl font-semibold">Contact</h2>
+            <p class="text-gray-600 mt-2">Reach out to me via email or social media.</p>
+            <div class="flex gap-4 mt-4">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:your.email@example.com">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+            </div>
         </div>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:sambathmech@example.com">sambathmech@example.com</a>.</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Sambath Mech. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
