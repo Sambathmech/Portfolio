@@ -21,13 +21,14 @@
             align-items: flex-start;
             width: 80%;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
         .image-container {
             width: 300px;
             height: auto;
-            position: absolute;
-            top: 20px;
-            left: 20px;
+            position: relative;
+            top: 0;
+            left: 0;
         }
         .image-container img {
             width: 100%;
@@ -40,8 +41,8 @@
         .content {
             display: flex;
             flex-direction: column;
-            width: 60%;
-            margin-left: 350px; /* Ensures content does not overlap with image */
+            width: calc(100% - 350px);
+            margin-left: 20px;
         }
         .container1, .container2, .container3 {
             background: #2E2E2E; /* Dark Grey */
@@ -86,13 +87,42 @@
             width: 24px;
             height: 24px;
         }
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .image-container {
+                width: 200px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .content {
+                width: 100%;
+                margin-left: 0;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 28px;
+            }
+            h3 {
+                font-size: 24px;
+            }
+            p, li {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="Img.jpeg" alt="Sambath Pannerselvam">
-    </div>
     <div class="container">
+        <div class="image-container">
+            <img src="Img.jpeg" alt="Sambath Pannerselvam">
+        </div>
         <div class="content">
             <div class="container1">
                 <h1>Sambath Pannerselvam</h1>
@@ -126,3 +156,4 @@
     </div>
 </body>
 </html>
+
